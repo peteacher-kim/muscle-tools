@@ -92,7 +92,9 @@ const CATS=[
 ];
 /* 도구 목록: 여기에 하나씩 추가하면 카드가 생겨요
    {cat:'pum', name:'도구 이름', type:'웹앱', desc:'한 줄 소개', url:'https://...', guideOnly:false} */
-const TOOLS=[];
+const TOOLS=[
+  {cat:'pe', name:'야구 점수판', type:'웹앱', desc:'이닝별 점수, 볼·스트라이크·아웃, 주자와 타순까지 기록하고 타자 등장곡을 틀어 주는 수업용 점수판', url:'https://peteacher-kim.github.io/-/', guideOnly:false}
+];
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const catOf=id=>CATS.find(c=>c.id===id)||CATS[0];
